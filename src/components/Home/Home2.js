@@ -16,34 +16,30 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Sobre <span className="green"> mi </span> 
+              Sobre <span className="green"> mi </span>
             </h1>
             <p className="home-about-body">
-              Durante estos años he adquirido conocimientos sobre análisis web
-              e-commerce y desarrollo web, tanto a nivel formativo como de
-              experiencia, consiguiendo y superando los KPI's marcados a nivel
-              de organización.
+              Como experto en e-commerce, mi principal role en los últimos años,
+              he adquirido sólidos conocimientos en análisis y desarrollo web.
               <br />
               <br />
               Mi lenguaje de programación principal es
               <i>
                 <b className="green"> Javascript </b>
               </i>
-             
+              , en el cual me siento cómodo y capaz de desarrollar soluciones
+              efectivas. Mi área de interés está centrada en las nuevas
+              tecnologías y productos web, así como áreas relacionadas con el
+              comercio electrónico y el análisis del tráfico web.
               <br />
+
+              
               <br />
-              Mi interés se centra en construir y en mejorar en nuevas{" "}
-              <i>
-                <b className="green">tecnologías y productos web</b>
-              </i>
-              , así como en áreas relacionadas con el{" "}
-              <i>
-                <b className="green">
-                  comercio electrónico y el analisis del tráfico web.
-                </b>
-              </i>
-              <br />
-              <br />
+              Creo en el <b className="green"> aprendizaje continuo</b> como
+              parte de la evolución profesional, donde pueda aplicar mis
+              habilidades y conocimientos para impulsar el crecimiento en el
+              ámbito tecnológico y empresarial. 
+              <br /><br/>
               Cuando es posible, también aplico mi pasión por desarrollar
               projectos personales con <b className="green">Node.js</b> y{" "}
               <i>

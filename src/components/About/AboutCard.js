@@ -25,8 +25,16 @@ function AboutCard() {
             Actualmente trabajo como Digital E-commerce Merchandiser en El Corte
             Inglés.
             <br />
-            He completado el Bootcamp Web Developer Full Stack en Ironhack, así
-            como cursos superiores de Marketing Online y Social Media. <br />
+            He completado el{" "}
+            <strong className="green">
+              Bootcamp Web Developer Full Stack
+            </strong>{" "}
+            en Ironhack, así como cursos superiores de
+            <strong className="green">
+              {" "}
+              Marketing Online y Social Media.
+            </strong>{" "} y consultor SAP SD.
+            <br />
             Además de poseer una licenciatura en Antropología Social y Cultural,
             que me ha permitido poder hacer análisis sociales sobre pautas de
             comportamiento.
@@ -37,10 +45,10 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPacman /> Playing Games
+              <ImPacman /> Videojuegos
             </li>
             <li className="about-activity">
-              <ImDownload /> Technology
+              <ImDownload /> Tecnología
             </li>
             <li className="about-activity">
               <ImBasecamp /> Trekking
