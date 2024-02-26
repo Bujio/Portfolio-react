@@ -10,16 +10,17 @@ import {
   DiCss3,
   DiHtml5,
   DiDatabase,
+  DiPhp,
 } from "react-icons/di";
 import {
   SiBootstrap,
   SiGoogleanalytics,
   SiGulp,
+  SiMysql,
   SiPostgresql,
   SiPostman,
-  SiSap,
   SiSass,
-  SiSqlite,
+  SiTableau,
 } from "react-icons/si";
 
 function Techstack() {
@@ -33,6 +34,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPhp />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
@@ -49,8 +53,9 @@ function Techstack() {
         <DiDatabase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiMysql />
       </Col>
+
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
