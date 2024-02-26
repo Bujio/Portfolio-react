@@ -10,6 +10,8 @@ import cafe from "../../Assets/Projects/cafe2.png";
 import clinica from "../../Assets/Projects/clinica.png";
 import store from "../../Assets/Projects/store-front.png";
 import blackjack from "../../Assets/Projects/blackjack.png";
+import festival from "../../Assets/Projects/festival-rock.png";
+import apartamentos from "../../Assets/Projects/apartamentos.png";
 
 function Projects() {
   return (
@@ -58,6 +60,16 @@ Este proyecto ha sido creado utilizando HTML y CSS con el objetivo de aprender c
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={apartamentos}
+              isBlog={false}
+              title="BienesRaices"
+              description="Web responsive con modo oscuro, cuyo proposito era trabajar los estilos con Sass y su posterior compilación a Css, así como la performance de la carga de imágenes y su automatización a diferentes formatos. "
+              ghLink="https://github.com/Bujio/venta-de-apartamentos"
+              demoLink="https://venta-de-apartamentos.vercel.app/" //    <--------Please include a demo link here
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={store}
               isBlog={false}
               title="Documentación Frontend"
@@ -104,6 +116,16 @@ Chakra UI"
               description="App que hace un CRUD completo utilizando Vite, LocalStorage, y hooks como useState, UseEffect, useContext"
               ghLink="https://github.com/Bujio/App-ToDos"
               demoLink="https://bujio.github.io/App-ToDos/" //    <--------Please include a demo link here
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={festival}
+              isBlog={false}
+              title="Festival Rock & EDM"
+              description="Web desarrollada con HTML, CSS, Sass, JavaScript y Gulp, donde he profundizado en el uso de Sass y automatización de tareas con Gulp "
+              ghLink="https://github.com/Bujio/Festival-music"
+              demoLink="https://festival-music-bay.vercel.app/" //    <--------Please include a demo link here
             />
           </Col>
         </Row>
