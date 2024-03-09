@@ -63,9 +63,9 @@ Este proyecto ha sido creado utilizando HTML y CSS con el objetivo de aprender c
               imgPath={apartamentos}
               isBlog={false}
               title="BienesRaices"
-              description="Web responsive con modo oscuro, cuyo proposito era trabajar los estilos con Sass y su posterior compilación a Css, así como la performance de la carga de imágenes y su automatización a diferentes formatos. "
-              ghLink="https://github.com/Bujio/venta-de-apartamentos"
-              demoLink="https://venta-de-apartamentos.vercel.app/" //    <--------Please include a demo link here
+              description="Web responsive con modo oscuro, cuyo proposito era trabajar con el Model View Controller (MVC) teniendo una base de datos relacional utilizando TablePlus y MySQL. Además de los estilos con Sass y su posterior compilación a Css, así como la performance de la carga de imágenes y su automatización a diferentes formatos. "
+              ghLink="https://github.com/Bujio/venta-apartamentos-php-MVC"
+              demoLink="https://sutgowu.nyc.dom.my.id/admin" //    <--------Please include a demo link here
             />
           </Col>
           <Col md={4} className="project-card">
