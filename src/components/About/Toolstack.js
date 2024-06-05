@@ -5,7 +5,6 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiWindows11,
-  SiDiscord,
   SiNetlify,
   SiFigma,
   SiNotion,
@@ -32,10 +31,7 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiNotion />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDiscord />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col> xs={4} md={2} className="tech-icons">
         <SiNetlify />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
