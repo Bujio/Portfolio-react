@@ -105,6 +105,7 @@ Node.js, Express.js, MongoDB
 React.js, Axios
 APIs: Spotify, Cloudinary, MapBox
 Chakra UI"
+              ghLink="https://github.com/orgs/proyecto-final-music-Ironhack/repositories"
               demoLink="https://beat-the-beat-event-music.netlify.app/" //<--------Please include a demo link here
             />
           </Col>
