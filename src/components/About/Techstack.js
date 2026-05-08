@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-
+import { motion } from "framer-motion";
 import {
   DiJavascript1,
   DiReact,
@@ -9,7 +9,6 @@ import {
   DiGit,
   DiCss3,
   DiHtml5,
-  DiDatabase,
   DiPhp,
 } from "react-icons/di";
 import {
@@ -18,60 +17,60 @@ import {
   SiGulp,
   SiMysql,
   SiPostgresql,
-  SiPostman,
   SiSass,
-  SiTableau,
 } from "react-icons/si";
+
+const techs = [
+  { icon: <DiHtml5 />, name: "HTML5" },
+  { icon: <DiCss3 />, name: "CSS3" },
+  { icon: <DiJavascript1 />, name: "JavaScript" },
+  { icon: <DiPhp />, name: "PHP" },
+  { icon: <DiReact />, name: "React.js" },
+  { icon: <DiNodejs />, name: "Node.js" },
+  { icon: <DiMongodb />, name: "MongoDB" },
+  { icon: <SiMysql />, name: "MySQL" },
+  { icon: <SiPostgresql />, name: "PostgreSQL" },
+  { icon: <DiGit />, name: "Git" },
+  { icon: <SiBootstrap />, name: "Bootstrap" },
+  { icon: <SiSass />, name: "Sass" },
+  { icon: <SiGulp />, name: "Gulp" },
+  { icon: <SiGoogleanalytics />, name: "Analytics" },
+];
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.07 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.4, 0, 0.2, 1] } },
+};
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPhp />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiDatabase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSass />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGulp />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGoogleanalytics />
-      </Col>
-    </Row>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={containerVariants}
+    >
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        {techs.map(({ icon, name }) => (
+          <Col
+            key={name}
+            xs={4}
+            md={2}
+            className="tech-icons"
+            as={motion.div}
+            variants={itemVariants}
+          >
+            <span className="tech-icon-images">{icon}</span>
+            <span className="tech-icon-label">{name}</span>
+          </Col>
+        ))}
+      </Row>
+    </motion.div>
   );
 }
 
